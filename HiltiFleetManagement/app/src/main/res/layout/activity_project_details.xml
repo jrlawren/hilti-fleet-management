@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tau.tim.hiltifleetmanagement.ProjectManagement.ProjectDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout android:id="@+id/top_bar"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:background="#F00"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="fill_parent" android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/logo4" />
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+
+    </android.support.design.widget.AppBarLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/top_bar"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/projDetailProjName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/projDetailStartDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/projDetailProjName"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/projDetailStartDate"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/projDetailEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projDetailProjName"
+            android:layout_toEndOf="@+id/projDetailProjName"
+            android:layout_toRightOf="@+id/projDetailProjName"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ListView
+            android:id="@+id/projDetailToolListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="90"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Edit Project"
+            android:id="@+id/editProjectButton"
+            android:layout_weight="10"
+            android:onClick="editProjectOnClick"/>
+
+        <Button
+            android:id="@+id/projDetailAssignTool"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="10"
+            android:onClick="assignToolOnClick"
+            android:text="Assign Tool"/>
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

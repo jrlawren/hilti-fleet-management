@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hilti Fleetmanagement</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_new_project">AddNewProject</string>
+    <string-array name="sort_array">
+        <item>Name</item>
+        <item>Start Date Asc.</item>
+        <item>Start Date Desc.</item>
+        <item>End Date Asc.</item>
+        <item>End Date Desc.</item>
+        <item>Completed</item>
+    </string-array>
+    <string-array name="searchOptions">
+        <item>Tool Name</item>
+        <item>Tool ID</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+</resources>
