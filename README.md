@@ -1,5 +1,5 @@
 # Hilti Fleet Management Android App
-## Semi-Finalist in Hilti IT Competition
+## Semi-Finalist in Hilti's 2015 IT Competition
 
 As part of Hilti's IT competition, an Android application with a MySQL backend was developed to provide Hilti customers the functionality to easily manage tools and projects.  
 
